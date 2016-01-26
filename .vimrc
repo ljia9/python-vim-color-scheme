@@ -30,6 +30,8 @@ set ruler
 set backspace=indent,eol,start
 set clipboard=unnamed
 
+" prevent messy paste from clipboard
+set pastetoggle=<F2>
 syntax enable
 set rnu
 set number
