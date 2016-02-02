@@ -17,6 +17,8 @@ Plugin 'VundleVim/Vundle.vim'
 call vundle#end()      
 
 filetype plugin indent on
+set expandtab
+set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 " set ttyfast
