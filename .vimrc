@@ -38,7 +38,15 @@ syntax enable
 set rnu
 set number
 set background=dark
+" highlight Normal ctermfg=grey ctermbg=black
 colorscheme pilote
+
+"autocomplete brackets
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
 
 " Stupid shift key fixes
 map :W :w            
