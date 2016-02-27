@@ -21,13 +21,20 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
+set smarttab
+
 " set ttyfast
 set showmatch
+set showcmd
 set wildmenu
 set hlsearch
+:nmap \q :nohlsearch<CR>
+
 set ignorecase
 set smartcase
 set confirm
+set hidden
+set history=50
 set ruler 
 set backspace=indent,eol,start
 set clipboard=unnamed
