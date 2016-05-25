@@ -54,16 +54,20 @@ inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
+" Do comment blocks quickly
+nnoremap <C-n> :center 20<cr>hhv0r#A<space><esc>40A#<esc>d19<bar>YppVr#kk.
+nnoremap <C-h> :center 80<cr>hhv0r#A<space><esc>40A#<esc>d80<bar>YppVr#kk.
 
 " Stupid shift key fixes
 map :W :w            
 map :WQ :wq
 map :wQ :wq
 map :Q :q
+" make escape easier to reach
+imap jk <Esc>
 
 " Make vimrc easy to update
 " ",v brings up my .vimrc
 " ",V reloads it -- making all changes active (have to save first)
 map ,v :sp ~/.vimrc<CR><C-W>_
 map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
