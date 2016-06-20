@@ -65,6 +65,7 @@ map :wQ :wq
 map :Q :q
 " make escape easier to reach
 imap jk <Esc>
+imap kj <Esc>
 
 " Make vimrc easy to update
 " ",v brings up my .vimrc
