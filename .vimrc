@@ -54,6 +54,10 @@ inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
 
+" Allow `h` and `l` to move you to previous/next line when reached
+set whichwrap+=>,l
+set whichwrap+=<,h
+
 " Do comment blocks quickly
 nnoremap <C-n> :center 20<cr>hhv0r#A<space><esc>40A#<esc>d19<bar>YppVr#kk.
 nnoremap <C-h> :center 80<cr>hhv0r#A<space><esc>40A#<esc>d80<bar>YppVr#kk.
